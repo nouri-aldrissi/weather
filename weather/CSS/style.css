@@ -1,0 +1,111 @@
+:root {
+    font-size: 16px;
+  --main-color: #2a3439;
+  --color-Gunmetal: #2a3a3f; 
+  --color-Charcoal:#323544;
+  --color-Primary: #3498db; 
+  --color-Light-Grayish:#BFC1C4; 
+}
+
+
+/* -------navbar-section---------- */
+
+
+.navbar {
+  background-color: var(--main-color);
+  padding: 0.625rem 1.25rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+  box-shadow: 0 0.375rem 0.9375rem rgba(0, 0, 0, 0.3);
+}
+
+.navbar img {
+  max-height: 3rem;
+  margin-right: 1rem;
+}
+
+.navbar h1 {
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.navbar span {
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+  transition: all 0.3s ease;
+  border: 0.125rem solid transparent;
+  border-radius: 1.40625rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item:hover {
+  border-color: #007bff;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+  color: #007bff;
+}
+
+/* -------navbar-section end---------- */
+
+/* -------home-section---------- */
+
+.hero{
+height: 40vh;
+  background-image: url('../images/banner.png');
+   background-size: cover;
+    background-position: center;
+}
+/* -------home-section end---------- */
+
+/* -----item-weather---------- */
+
+.forecast-table{
+background-color:var(--main-color);
+
+}
+.card{
+  color: var(--color-Light-Grayish);
+  background-color: var(--color-Charcoal);
+}
+
+/* -----item-weather end---------- */
+
+/* -----------footer-----------------*/
+.social-links a {
+  font-size: 1.8rem;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2) rotate(15deg);
+  color: #2a3439;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.social-links a {
+  color: #ffffff;
+}
+
+.social-links a:hover {
+  color: #2a3439;
+}
+/* -----------footer end-----------------*/

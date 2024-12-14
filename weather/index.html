@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+
+<body>
+
+    <!-- nav bar-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- الشعار والنص -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./images/logo@2x.png" alt="Weather" class="img img-fluid">
+                <div class="p-2">
+                    <h1 class="text-white">Weather</h1>
+                    <span class="text-white">Tagline goes here</span>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--القائمة -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto d-flex flex-column flex-sm-row gap-3"> 
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-3" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-3" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-3" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-3" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-3 contact-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar/-->
+<!-- home-section -->
+    <section>
+        <div class="hero">
+            <div class="container py-5 ">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 col-12">
+                        <form class="find-location d-flex">
+                            <input id="inpotSearch" type="text" class="form-control form-control-lg" placeholder="Find your location..."
+                                id="search">
+                            <button id="btnSearch" type="button" class="btn btn-primary btn-lg ms-3" id="submit">Find</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- home-section/ -->
+
+<!-- item-weather -->
+    <section class="forecast-table py-5">
+     
+            <div class="forecast-container" id="forecast">
+                <div class="container">
+                <div id="tableWeather" class="row gap-3 gap-lg-0 align-items-stretch">
+
+                    <!-- <div class="col-lg-4 col-md-6 col-sm-12 px-1">
+                        <div class="card border-success h-100">
+                            <div class="container">
+                                <div class="card-header border-success d-flex justify-content-between">
+                                    <h2 class="fa-1x">Friday</h2>
+                                    <h3 class="fa-1x"> 13 December</h3>
+                                </div>
+                
+                                <div class="card-body text-success">
+                                    <h3 class="card-title text-white">Cairo</h3>
+                                    <h4 class="card-text fa-5x text-white">23 <sup>o</sup>C</h4>
+                                </div>
+                
+                                <div class="img-fluid img">
+                                    <img src="./images/122.png" alt="" width="90">
+                                    <p class="card-text p-2">Overcast</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-success">
+                                    <span><i class="fa-solid fa-umbrella p-2"></i>20%</span>
+                                    <span><i class="fa-solid fa-wind p-2"></i> 18km/h</span>
+                                    <span><i class="fa-solid fa-compass p-2"></i> East</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-4 col-md-6 col-sm-12 px-1">
+                        <div class="card border-success h-100 d-flex justify-content-center align-items-center">
+                            <div class="container">
+                                <h2 class="fa-2x text-center ">Friday</h2>
+                                <div class="card-body text-success d-flex flex-column align-items-center justify-content-center">
+                                    <img src="./images/176.png" alt="" width="90">
+                                    <h4 class="card-text fa-3x text-white">23 <sup>o</sup>C</h4>
+                                    <h4 class="card-text fa-1x text-white">23 <sup>o</sup>C</h4>
+                                    <p class="card-text p-2 text-center">Overcast</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-4 col-md-6 col-sm-12 px-1">
+                        <div class="card border-success h-100 d-flex justify-content-center align-items-center">
+                            <div class="container">
+                                <h2 class="fa-2x text-center ">Friday</h2>
+                                <div class="card-body text-success d-flex flex-column align-items-center justify-content-center">
+                                    <img src="./images/176.png" alt="" width="90">
+                                    <h4 class="card-text fa-3x text-white">23 <sup>o</sup>C</h4>
+                                    <h4 class="card-text fa-1x text-white">23 <sup>o</sup>C</h4>
+                                    <p class="card-text p-2 text-center">Overcast</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                
+                </div>
+            </div>
+            </div>
+      
+    </section>
+<!-- item-weather/ -->
+<!-- footer -->
+    <footer class="site-footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Subscription Form Section -->
+                <div class="col-md-8 mb-4 mb-md-0">
+                    <form action="#" class="subscribe-form d-flex">
+                        <input type="email" class="form-control form-control-lg" placeholder="Enter your email to subscribe..." required>
+                        <button type="submit" class="btn btn-primary btn-lg ms-3">Subscribe</button>
+                    </form>
+                </div>
+    
+                <!-- Social Media Links Section -->
+                <div class="col-md-3 offset-md-1">
+                    <div class="social-links d-flex justify-content-between">
+                        <a href="#" class="text-white social-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white social-icon">
+                            <i class="fa-brands fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white social-icon">
+                            <i class="fa-brands fa-google-plus fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white social-icon">
+                            <i class="fa-brands fa-pinterest fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer Copyright -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="colophon mb-0">Copyright &copy; 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- footer /-->
+<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/mine.js"></script>
+</body>
+
+</html>
